@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeKaro Betul - Hackathon Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" data-aos="fade-right">CodeKaro Betul</div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="registration.html">Register</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content" data-aos="zoom-in">
+            <h1>CodeKaro Betul</h1>
+            <p>Unleash Your Coding Potential</p>
+            <div class="prize-cards">
+                <div class="prize-card" data-aos="flip-left">
+                    <h3>1st Prize</h3>
+                    <p>₹800</p>
+                </div>
+                <div class="prize-card" data-aos="flip-left" data-aos-delay="100">
+                    <h3>2nd Prize</h3>
+                    <p>₹500</p>
+                </div>
+                <div class="prize-card" data-aos="flip-left" data-aos-delay="200">
+                    <h3>3rd Prize</h3>
+                    <p>₹200</p>
+                </div>
+            </div>
+            <a href="registration.html" class="cta-button">Register Now</a>
+        </div>
+        <div id="canvas-container"></div>
+    </header>
+
+    <main>
+        <section class="important-dates" data-aos="fade-up">
+            <h2>Important Dates</h2>
+            <div class="dates-container">
+                <div class="date-item" data-aos="flip-left">
+                    <h3>Registration Opens</h3>
+                    <p>December 15, 2024</p>
+                </div>
+                <div class="date-item" data-aos="flip-left" data-aos-delay="100">
+                    <h3>Registration Closes</h3>
+                    <p>January 5, 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-phases" data-aos="fade-up">
+            <h2>Event Phases</h2>
+            <div class="phases-container">
+                <div class="phase-card" data-aos="zoom-in">
+                    <div class="phase-number">1</div>
+                    <h3>Minor Project</h3>
+                    <p>Create an initial project to showcase your basic skills</p>
+                    <div class="phase-icon">🚀</div>
+                </div>
+                <div class="phase-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="phase-number">2</div>
+                    <h3>Major Project</h3>
+                    <p>Shortlisted participants work on advanced projects</p>
+                    <div class="phase-icon">💻</div>
+                </div>
+                <div class="phase-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="phase-number">3</div>
+                    <h3>Finale</h3>
+                    <p>Final presentation and winner selection</p>
+                    <div class="phase-icon">🏆</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" data-aos="fade-up">
+            <h2>Event Highlights</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Registration Fee</h3>
+                    <p>Only ₹50 for Betul City Participants</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Certificates</h3>
+                    <p>Participation Certificates for All</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Learn & Grow</h3>
+                    <p>Enhance Your Coding Skills</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Network</h3>
+                    <p>Connect with Fellow Developers</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CodeKaro Betul. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle">
+            <span class="bot-icon">🤖</span>
+            <span class="bot-text">Ask Betulian</span>
+        </button>
+        <div class="chatbot-box">
+            <div class="chatbot-header">
+                <h3>Ask Betulian</h3>
+                <button class="close-chat">×</button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot-message">
+                    <span class="bot-avatar">🤖</span>
+                    <div class="message-content">
+                        Hi! I'm Betulian, your CodeKaro assistant. How can I help you today?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your question..." id="chat-input">
+                <button class="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

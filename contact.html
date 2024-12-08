@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CodeKaro Betul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CodeKaro Betul</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="registration.html">Register</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+    </nav>
+
+    <main class="contact-container">
+        <h2 data-aos="fade-down">Contact Our Organizers</h2>
+        
+        <div class="organizers-grid">
+            <div class="organizer-card" data-aos="flip-left">
+                <div class="organizer-info">
+                    <h3>Shivam Kothekar</h3>
+                    <p>Lead Organizer</p>
+                    <a href="tel:+917987304066" class="contact-link">+91 7987304066</a>
+                </div>
+            </div>
+
+            <div class="organizer-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="organizer-info">
+                    <h3>Aditya Mawase</h3>
+                    <p>Lead Organizer</p>
+                    <a href="tel:+917879658815" class="contact-link">+91 7879658815</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-container" data-aos="fade-up">
+            <h3>Send us a Message</h3>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CodeKaro Betul. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CodeKaro Betul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CodeKaro Betul</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="registration.html">Register</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="about-container">
+        <div class="about-hero" data-aos="fade-down">
+            <h1>About CodeKaro Betul</h1>
+            <div class="event-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="phase-number">01</div>
+                    <h3>Phase 1: Minor Project</h3>
+                    <p>Participants will create a minor project to showcase their basic skills. Top performers will be shortlisted for Phase 2.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="phase-number">02</div>
+                    <h3>Phase 2: Major Project</h3>
+                    <p>Shortlisted participants will work on a comprehensive major project demonstrating advanced capabilities.</p>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="phase-number">03</div>
+                    <h3>Phase 3: Finale</h3>
+                    <p>The final showdown where the best projects will compete for the top prizes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="important-dates" data-aos="fade-up">
+            <h2>Important Dates</h2>
+            <div class="dates-grid">
+                <div class="date-card">
+                    <h3>Registration Opens</h3>
+                    <p>December 15, 2024</p>
+                </div>
+                <div class="date-card">
+                    <h3>Registration Closes</h3>
+                    <p>January 5, 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="organizers-section" data-aos="fade-up">
+            <h2>Meet Our Organizers</h2>
+            <div class="organizers-grid">
+                <div class="organizer-card-3d" data-aos="flip-left">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Shivam Kothekar</h3>
+                            <p>Senior Organizer</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Contact: +91 7987304066</p>
+                            <a href="mailto:shivam@codekaro.com" class="contact-link">Email Shivam</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="organizer-card-3d" data-aos="flip-right">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Aditya Mawase</h3>
+                            <p>Senior Organizer</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Contact: +91 7879658815</p>
+                            <a href="mailto:aditya@codekaro.com" class="contact-link">Email Aditya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-details" data-aos="zoom-in">
+            <h2>Event Highlights</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Registration Fee</h3>
+                    <p>Only ₹50 for Betul City participants</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Prize Pool</h3>
+                    <p>Total prizes worth ₹1500</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Certification</h3>
+                    <p>Certificates for all participants</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="canvas-container"></div>
+
+    <footer>
+        <p>&copy; 2024 CodeKaro Betul. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
